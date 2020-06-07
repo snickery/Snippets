@@ -340,7 +340,7 @@ $if($gt(%totaldiscs%,1),$noop(
 $noop(★ Track. Title ★)
 $if($in(%media%,Vinyl),$noop(
   )$if($eq(%_useMusicBrainzStyleForVinylTrack%,1),$noop(
-    )$if(%_musicbrainz_tracknumber%,%_musicbrainz_tracknumber%. )$noop(
+    )$if(%_musicbrainz_tracknumber%,%_musicbrainz_tracknumber% )$noop(
   )),$noop(
   )$if(%tracknumber%,$if($gt(%totaldiscs%,1),$if($and($eq(%_useSubDiscFolder%,0),$eq(%_mergeDiscWhenNotUsingSubfolder%,1)),%discnumber%))$num(%tracknumber%,2). )
 )
